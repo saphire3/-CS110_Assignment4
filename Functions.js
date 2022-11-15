@@ -25,8 +25,9 @@ function gcd(a, b) {
 
 
 
-function hcf(a, b){
-    console.log(gcd(a, b));
+function lcm(a, b){
+    let lcm = a * b / gcd(a, b);
+    return lcm;
 }
 //console.log(gcd(7854, 4746));
 
@@ -64,7 +65,7 @@ function toHexadecimal(number) {
 module.exports = {
     factorial: factorial,
     gcd: gcd,
-    hcf: hcf,
+    lcm: lcm,
     toHexadecimal: toHexadecimal,
 }
 
