@@ -23,13 +23,15 @@ function gcd(a, b) {
     return a;
 }
 
+//console.log(gcd(7854, 4746));
 
 
-function lcm(a, b){
+function lcm(a, b) {
     let lcm = a * b / gcd(a, b);
     return lcm;
 }
-//console.log(gcd(7854, 4746));
+
+//console.log(lcm(13, 4));
 
 function toHexadecimal(number) {
     const arr = ['A', 'B', 'C', 'D', 'E', 'F'];
